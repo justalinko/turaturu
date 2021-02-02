@@ -1,0 +1,29 @@
+{
+  "name": "lin.turaturu.id",
+  "version": "1.0.21",
+  "description": "Official page of lin.turaturu.id",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justalinko/turaturu.git"
+  },
+  "author": "jstalinko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justalinko/turaturu/issues"
+  },
+  "homepage": "https://github.com/justalinko/turaturu#readme",
+  "dependencies": {
+    "ajax-request": "^1.2.3",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "instagram-scraping": "^1.0.13",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
+  }
+}

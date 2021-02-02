@@ -1,0 +1,66 @@
+
+<html>
+    <head>
+        <title>Lin - Tura Turu Sukses</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="sejati-nya manusia hanya lah makhluk untuk menyembah, hidup biar lah berjalan atas kehendak yang kuasa. urusan makan biar robot yang berjalan, sisa-nya kita hanya bisa beristirahat dan tidur">
+        <link rel="shortcut icon" href="https://seeklogo.com/images/L/L-logo-2BD4B04DA4-seeklogo.com.png">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=VT323&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/css/img.css">
+      <link rel="stylesheet" href="/css/style.css">
+      <style>
+        input{width: 100%;padding: 6px;background: transparent;border: 2px solid #333;}
+    </style>
+    <script>
+        function search()
+        {
+            var tag = document.getElementById('tag').value;
+            
+            window.location.assign("/feed/tag/"+tag);
+        }
+    </script>
+    </head>
+   
+    <body>
+        <div class="icon-bar">
+            <a href="/" class="haha">LIN</a>
+          <a href="/feed" class="hehe">FEEDS</a>
+          <a href="/about" class="huhu">ABOUT</a>
+          </div>
+        <div class="content">
+            <h3 class="heading">Feeds.</h3>
+            <p class="quote">
+                [<a href="/feed/tag/kpop">KPOP</a>]
+                [<a href="/feed/tag/tech">TECH</a>]
+                [<a href="/feed/tag/info">INFO</a>]
+            </p>
+            <form method="post" action="/feed/search">
+            <input type="text" class="input" placeholder="search instagram tag" name="tag" id="tag" >
+            </form>
+          <br><br> 
+            
+            <div class="row" >
+              <% var result = JSON.parse(dataig) %>
+              <% var media = result.medias %>
+              <% media.forEach(function(o){ %>
+              <div class="column">
+                <img src="<%= o.display_url %>" style="width:100%;max-height: 200px;" class="hover-shadow cursor">
+              </div>
+              <% }); %>
+
+              </div>
+          
+  
+
+            <footer style="text-align:center;margin-top:80px">
+            <a href="https://instagram.com/xalinko" target="_blank"><i class="fa fa-instagram"></i></a>
+             <a href="https://github.com/justalinko" target="_blank"><i class="	fa fa-github"></i></a>
+             <a href="https://xalinko.com" target="_blank"><i class="fa fa-linux"></i></a>
+             
+            </footer>
+          
+        </div>
+    </body>
+</html>

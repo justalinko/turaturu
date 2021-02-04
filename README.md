@@ -1,8 +1,8 @@
 # turaturu
 lin.turaturu.id source code
 
-``
-/** 
+
+ 
 * Basically i dont know why to make this project //
 * I just get bored right now and for fill the free time.
 ***************************************************  
@@ -22,5 +22,4 @@ lin.turaturu.id source code
 * 
 * So, Please to understand I'm still in the learning stage.
 * And sorry for my bad english.
-**/
-``
+

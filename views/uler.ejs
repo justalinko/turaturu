@@ -25,18 +25,26 @@
       </div>
         <div class="content">
             <h3 class="heading">Lin.</h3>
-            
-          <p class="quote">"" <%=random_quote;%>  ""</p>
-            <small><center><i>- Tura Turu Sukses -</i></center></small>
-            <br><br> 
-            
+            <% if(urlShort == false){ %>
+
+          <form method="post" action="/uler/post">
+            <label>Long URL ::</label><br>
+            <input type="url"  name="url" class="input" id="url"><br><br>
+            <input type="submit" name="submit" id="submit" class="btn" value="Short URL">
+          </form>
+    <% }else{ %>
+                  <label>Long URL ::</label><br>
+            <input type="url"  name="url" class="input" id="url" value="<%=LongUrl;%>"><br><br>
+              <label>Short URL ::</label><br>
+            <input type="url"  name="short" class="input" id="short" value="<%=urlShort%>"><br><br>
+          <% } %>
          
           
   
 
             <footer style="text-align:center;">
             <a href="https://instagram.com/xalinko" target="_blank"><i class="fa fa-instagram"></i></a>
-             <a href="https://github.com/justalinko" target="_blank"><i class=" fa fa-github"></i></a>
+             <a href="https://github.com/justalinko" target="_blank"><i class="	fa fa-github"></i></a>
              <a href="https://xalinko.com" target="_blank"><i class="fa fa-linux"></i></a>
              
             </footer>

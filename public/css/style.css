@@ -27,3 +27,8 @@ font-family: 'VT323',monospace;
 .icon-bar a:hover , .haha:hover,.hehe:hover,.huhu:hover {
 background-color: #000;
 }
+
+.input{width: 80%;padding: 6px;background: transparent;border: 1px solid #444;box-shadow: 4px 3px 0px #000}
+.input:focus,.input:hover{box-shadow: 2px 3px 2px inset #000;}
+.btn{padding: 6px;background: transparent;border: 1px solid #444;box-shadow: 4px 3px 0px #000}
+.btn:hover,.btn:focus,.btn:active{box-shadow: 2px 3px 2px inset #000;cursor: pointer;color: #000}

@@ -24,7 +24,8 @@
     "http": "0.0.1-security",
     "http-errors": "^1.8.0",
     "morgan": "^1.10.0",
+    "node-url-shortener": "^1.1.11",
     "path": "^0.12.7",
-    "request": "^2.88.2",
+    "request": "^2.88.2"
   }
 }
